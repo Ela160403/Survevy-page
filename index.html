@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>survey-form</title>
+    <meta=charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">The  form project which is built by me</p>
+  <fieldset>
+   <label id="name-label"for="name">Name<input type="text" id="name" required placeholder="Enter you name"name="name"></label><br>
+   <label for="email"id="email-label">Email<input type="email" required placeholder="Enter you email" name="email" id="email"></label><br>
+  
+   
+   <label for="age"id="number-label"> Age    <input type="number" required placeholder="age" id="number"min="18"max="60"></label><br>
+   <label>The recent subject you have completed<br><select id="dropdown"class="inline">
+     <option value="" required placeholder="Choose"></option>
+    <option value="1">Hypertext Markup Language</option>
+    <option value="2">Machine Language</option>
+    <option value="3">Data Analysis with Python</option>
+   </select><br></fieldset>
+  <fieldset> <label>Would u recommed this survery to a friend?</label>
+    <label for="yes"><input type="radio" id="yes"value="yes"class="inline" name="recommend">Yes</label>
+    <label for="no"><input type="radio"id="no" value="no"name="recommend"class="inline">No</label> 
+   <br> <label>What subjects do you like the most?</label><br>
+    <label><input type="checkbox"value="html" class="inline">Html</label><br>
+    <label><input type="checkbox"value="css"class="inline">Css</label>
+    <br><label><input type="checkbox"id="javascript"value="javascript"class="inline">Javascript</label>
+  <br><label><input type="checkbox"value="Python"class="inline">Python</label>
+  <br><label><input type="checkbox"value="Sql"class="inline">Sql</label>
+   <br><label for="comments">Any comments are suggestions?</label>
+   <br><textarea id="comments" placeholder="Write youre comments here..."></textarea>
+   </fieldset>
+   <fieldset><br><button id="submit">Submit</button>
+   </fieldset>
+   </form>
+  </body>
+</html>
